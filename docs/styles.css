@@ -1,0 +1,171 @@
+*{margin:0px; padding:0px; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+
+
+body{
+    background-color: hsl(30, 38%, 92%) ;
+    min-height: 100vh;
+    font-family: Montserrat;
+}
+
+h1{
+    font-family: Fraunces;
+    line-height: 1;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    position: relative;
+}
+
+.product{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color:white;
+    max-width: 600px;
+    height: auto;
+
+    border-radius: 10px;
+
+    
+
+
+}
+
+.description-product{
+
+    width: 100%;
+    height: 100%;
+
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+
+    gap: 20px;
+    padding: 35px;
+
+
+}
+
+p{
+    font-size: 14px;
+    line-height: 1.7;
+    width: auto;
+}
+
+button{
+
+    display: flex;
+    gap: 12px;
+
+    border: 0;
+    color: white;
+    font-weight: 600;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    height: 40px;
+    align-items: center;
+
+    padding: 10px;
+    
+    justify-content: center; /* Centra horizontalmente */
+
+    cursor: pointer;
+    
+    
+}
+
+button:hover{
+    background-color: hsl(158, 73%, 15%);
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.price :first-child{
+    color:hsl(158, 36%, 37%);
+    font-family: Fraunces;
+    font-size: 30px;
+}
+
+.price :last-child{
+    font-size: 15px;
+}
+
+p, s, h2{
+    color: #00000078;
+}
+
+h2{
+    font-size: 15px;
+}
+
+picture{
+    width: 100%;
+    height: 100%;
+}
+
+.img-product{
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+}
+
+@media (max-width: 650px) {
+
+    .product{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin: 5%;
+    }
+
+    .img-product{
+        background-image: url('image-product-mobile.jpg');
+
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .description-product{
+        padding: 21px;
+    }
+
+
+    
+}
